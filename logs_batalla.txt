@@ -1,0 +1,31 @@
+### INICIO BATALLA ###
+Diego | KNIGHT | 182 de vida VS Pepe | FAIRY | 101 de vida 
+### BATALLA ###
+Turno 1 
+Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 164
+Turno 2 
+Diego ataca con Kick Strike... Da en el blanco!. La vida del Pepe queda en 79
+Turno 3
+Pepe ataca con Kick Strike... Falla!. La vida del Diego se mantiene en 164
+Turno 4 
+Diego ataca con Fist Punch... Da en el blanco!. La vida del Pepe queda en 61
+Turno 5 
+Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 146
+Turno 6 
+Diego ataca con Kick Strike.... Falla!. La vida del Pepe se mantiene en 61
+Turno 7 
+Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 128
+Turno 8 
+Diego ataca con Kick Strike... Da en el blanco!. La vida del Pepe queda en 39
+Turno 9 
+Pepe ataca con Kick Strike... Da en el blanco!. La vida del Diego queda en 106
+Turno 10 
+Diego ataca con Fist Punch... Da en el blanco!. La vida del Pepe queda en 21
+Turno 11 
+Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 88
+Turno 12 
+Diego ataca con Kick Strike... Da en el blanco!. La vida del Pepe queda en 0
+
+Diego gana la batalla! 
+El Diego falló 1 veces su ataque. 
+El Pepe falló 1 veces su ataque.

@@ -1,23 +1,14 @@
 const crearPesonaje = require('./crear_personaje.js');
 const funcionesBatalla = require('./sistema_batalla.js');
+const generarArchivoLog = require('./generar_log.js');
 
 const personajes = crearPesonaje();
 
-let log = '### INICIO BATALLA ###'
+let log = '';
 
-function generateFileLog(logs, filename) {
-
-    const fs = require("fs");
-    fs.writeFile(filename, logs, (err) => {
-        if (err) throw err;
-    });
-}
-
-
-
-funcionesBatalla.anuncioBatalla(personajes[0], personajes[1]);
+log += '### INICIO BATALLA ###';
 log += funcionesBatalla.anuncioBatalla(personajes[0], personajes[1]);
-log += '\n### BATALLA ###'
+log += '\n### BATALLA ###';
 while (!funcionesBatalla.terminarJuego(personajes[0], personajes[1])) {
 
     if (funcionesBatalla.determinarTurno(personajes[0], personajes[1]) === "personaje1") {
@@ -35,6 +26,6 @@ while (!funcionesBatalla.terminarJuego(personajes[0], personajes[1])) {
 }
 
 if (!funcionesBatalla.terminarJuego(personajes[0].currentHealth, personajes[1].currentHealth)) {
-    log+= funcionesBatalla.mostrarResumen(personajes[0], personajes[1]);
-    generateFileLog(log , "logs_batalla.txt")
+    log += funcionesBatalla.mostrarResumen(personajes[0], personajes[1]);
+    generarArchivoLog(log , "../logs_batalla.txt")
 }
