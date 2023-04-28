@@ -48,6 +48,18 @@ function anuncioBatalla(personaje1, personaje2) {
 function determinarTurno(personaje1, personaje2) {
     if (personaje1.speed > personaje2.speed) {
         return "personaje1";
+    } else if(personaje1.speed === personaje2.speed) {
+        return escogerTurno();
+    } else {
+        return "personaje2";
+    }
+}
+
+// Si las velocidades son iguales, escoge una al azar
+function escogerTurno() {
+    const numRandom = Number.parseInt(Math.random() * 2);
+    if (numRandom === 0) {
+        return "personaje1";
     } else {
         return "personaje2";
     }
