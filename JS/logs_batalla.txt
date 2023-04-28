@@ -1,0 +1,71 @@
+### INICIO BATALLA ###
+Diego | WARRIOR | 128 de vida VS Davids | KNIGHT | 190 de vida 
+### BATALLA ###
+Turno 2 
+ Davids ataca con Sword Cleave... Da en el blanco!. La vida del Diego queda en 120
+Turno 3 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 175
+Turno 4
+Davids ataca con Sword Cleave... Falla!. La vida del Diego se mantiene en 120
+Turno 5 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 160
+Turno 6 
+ Davids ataca con Fist Smash... Da en el blanco!. La vida del Diego queda en 105
+Turno 7 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 145
+Turno 8
+Davids ataca con Sword Cleave... Falla!. La vida del Diego se mantiene en 105
+Turno 9 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 130
+Turno 10
+Davids ataca con Fist Smash... Falla!. La vida del Diego se mantiene en 105
+Turno 11 
+ Diego ataca con Fist Smash.... Falla!. La vida del Davids se mantiene en 130
+Turno 12 
+ Davids ataca con Fist Smash... Da en el blanco!. La vida del Diego queda en 90
+Turno 13 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 115
+Turno 14 
+ Davids ataca con Sword Cleave... Da en el blanco!. La vida del Diego queda en 82
+Turno 15 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 100
+Turno 16 
+ Davids ataca con Fist Smash... Da en el blanco!. La vida del Diego queda en 67
+Turno 17 
+ Diego ataca con Sword Cleave... Da en el blanco!. La vida del Davids queda en 92
+Turno 18 
+ Davids ataca con Sword Cleave... Da en el blanco!. La vida del Diego queda en 59
+Turno 19 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 77
+Turno 20
+Davids ataca con Sword Cleave... Falla!. La vida del Diego se mantiene en 59
+Turno 21 
+ Diego ataca con Sword Cleave... Da en el blanco!. La vida del Davids queda en 69
+Turno 22 
+ Davids ataca con Sword Cleave... Da en el blanco!. La vida del Diego queda en 51
+Turno 23 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 54
+Turno 24 
+ Davids ataca con Fist Smash... Da en el blanco!. La vida del Diego queda en 36
+Turno 25 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 39
+Turno 26
+Davids ataca con Sword Cleave... Falla!. La vida del Diego se mantiene en 36
+Turno 27 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 24
+Turno 28 
+ Davids ataca con Fist Smash... Da en el blanco!. La vida del Diego queda en 21
+Turno 29 
+ Diego ataca con Sword Cleave... Da en el blanco!. La vida del Davids queda en 16
+Turno 30 
+ Davids ataca con Sword Cleave... Da en el blanco!. La vida del Diego queda en 13
+Turno 31 
+ Diego ataca con Fist Smash... Da en el blanco!. La vida del Davids queda en 1
+Turno 32 
+ Davids ataca con Sword Cleave... Da en el blanco!. La vida del Diego queda en 5
+Turno 33 
+ Diego ataca con Sword Cleave... Da en el blanco!. La vida del Davids queda en 0
+
+Diego gana la batalla! 
+ El Diego falló 1 veces su ataque. 
+El Davids falló 5 veces su ataque.

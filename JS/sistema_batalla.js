@@ -3,9 +3,15 @@ let fallosP1 = 0;
 let fallosP2 = 0;
 let turno = 1;
 
+//let log = '### INICIO ###'
+
 function anuncioBatalla(personaje1, personaje2) {
-    console.log("### INICIO ###");
-    console.log(`${personaje1.name} | ${personaje1.class} | ${personaje1.maxHealth} de vida VS ${personaje2.name} | ${personaje2.class} | ${personaje2.maxHealth} de vida`);
+
+    //console.log("### INICIO ###");
+    //console.log(`${personaje1.name} | ${personaje1.class} | ${personaje1.maxHealth} de vida VS ${personaje2.name} | ${personaje2.class} | ${personaje2.maxHealth} de vida`);
+  //  log += `\n${personaje1.name} | ${personaje1.class} | ${personaje1.maxHealth} de vida VS ${personaje2.name} | ${personaje2.class} | ${personaje2.maxHealth} de vida ` 
+
+  return `\n${personaje1.name} | ${personaje1.class} | ${personaje1.maxHealth} de vida VS ${personaje2.name} | ${personaje2.class} | ${personaje2.maxHealth} de vida `
 }
 
 // Quien tenga la mayor velocidad empieza atacando
@@ -64,11 +70,14 @@ function ataqueP1(personaje1, personaje2) {
             console.log(`Turno ${turno}`);
             console.log(`${personaje1.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje2.name} queda en ${personaje2.currentHealth}`);
             turno++;
+
+            return `\nTurno ${turno} \n ${personaje1.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje2.name} queda en ${personaje2.currentHealth}`
         } else {
             fallosP1++;
             console.log(`Turno ${turno}`);
             console.log(`${personaje1.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje2.name} se mantiene en ${personaje2.currentHealth}`);
             turno++;
+            return `\nTurno ${turno} \n ${personaje1.name} ataca con ${ataque.name}.... Falla!. La vida del ${personaje2.name} se mantiene en ${personaje2.currentHealth}`
         }
     }
 }
@@ -87,11 +96,13 @@ function ataqueP2(personaje1, personaje2) {
             console.log(`Turno ${turno}`);
             console.log(`${personaje2.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje1.name} queda en ${personaje1.currentHealth}`);
             turno++;
+            return `\nTurno ${turno} \n ${personaje2.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje1.name} queda en ${personaje1.currentHealth}`
         } else {
             fallosP2++;
             console.log(`Turno ${turno}`);
             console.log(`${personaje2.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje1.name} se mantiene en ${personaje1.currentHealth}`);
             turno++;
+            return `\nTurno ${turno}\n${personaje2.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje1.name} se mantiene en ${personaje1.currentHealth}`
         }
     }
 }
@@ -99,8 +110,10 @@ function ataqueP2(personaje1, personaje2) {
 function anunciarGanador(personaje1, personaje2) {
     if (personaje1.currentHealth <= 0) {
         console.log(`${personaje2.name} gana la batalla!`)
+        return `\n${personaje2.name} gana la batalla! `
     } else if (personaje2.currentHealth <= 0) {
         console.log(`${personaje1.name} gana la batalla!`)
+        return `\n${personaje1.name} gana la batalla! `
     }
 }
 
@@ -108,6 +121,7 @@ function mostrarResumen(personaje1, personaje2) {
     anunciarGanador(personaje1, personaje2);
     console.log(`El ${personaje1.name} falló ${fallosP1} veces su ataque.`)
     console.log(`El ${personaje2.name} falló ${fallosP2} veces su ataque.`)
+    return '\n'+anunciarGanador(personaje1, personaje2) +  `\n El ${personaje1.name} falló ${fallosP1} veces su ataque. \nEl ${personaje2.name} falló ${fallosP2} veces su ataque.` 
 }
 
 function terminarJuego(personaje1, personaje2) {
@@ -116,4 +130,4 @@ function terminarJuego(personaje1, personaje2) {
     }
 }
 
-module.exports = { anuncioBatalla,  determinarTurno, ataqueP1, ataqueP2, mostrarResumen, terminarJuego};
+module.exports = { anuncioBatalla,  determinarTurno, ataqueP1, ataqueP2, mostrarResumen, terminarJuego , };
