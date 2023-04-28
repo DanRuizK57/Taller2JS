@@ -39,6 +39,9 @@ const personaje2 = {
     }
 }
 
+let fallosP1 = 0;
+let fallosP2 = O;
+
 function anuncioBatalla(personaje1, personaje2) {
     console.log("### INICIO ###");
     console.log(`${personaje1.name} | ${personaje1.class} | ${personaje1.maxHealth} de vida VS ${personaje2.name} | ${personaje2.class} | ${personaje2.maxHealth} de vida`);
@@ -96,6 +99,7 @@ function ataqueP1(personaje1, personaje2) {
             personaje2.currentHealth -= danio;
             console.log(`${personaje1.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje2.name} queda en ${personaje2.currentHealth}`)
         } else {
+            fallosP1++;
             console.log(`${personaje1.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje2.name} se mantiene en ${personaje2.currentHealth}`)
         }
     }
@@ -111,16 +115,22 @@ function ataqueP2(personaje1, personaje2) {
             personaje1.currentHealth -= danio
             console.log(`${personaje2.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje1.name} queda en ${personaje1.currentHealth}`)
         } else {
+            fallosP2++;
             console.log(`${personaje2.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje1.name} se mantiene en ${personaje1.currentHealth}`)
         }
     }
 }
 
-anuncioBatalla(personaje1, personaje2);
-console.log(determinarTurno(personaje1, personaje2));
-console.log(escogerAtaque(personaje1));
-console.log(aciertaAtaque(personaje1.firstAttack));
-ataqueP1(personaje1, personaje2);
-console.log(personaje2);
-ataqueP2(personaje1, personaje2);
-console.log(personaje1);
+function anunciarGanador() {
+    if (personaje1.currentHealth <= 0) {
+        console.log(`${personaje2.nombre} gana la batalla!`)
+    } else if (personaje2.vidaActual <= 0) {
+        console.log(`${personaje1.nombre} gana la batalla!`)
+    }
+}
+
+function mostrarResumen() {
+    anunciarGanador();
+    console.log(`El ${personaje1.name} falló ${fallosP1} veces su ataque.`)
+    console.log(`El ${personaje2.name} falló ${fallosP2} veces su ataque.`)
+}
