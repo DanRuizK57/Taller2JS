@@ -1,46 +1,6 @@
-const personaje1 = {
-    name: "Juan",
-    class: "Clase",
-    maxHealth: 100,
-    currentHealth: 100,
-    speed: 8,
-    firstAttack: {
-        name: "Kick",
-        damage: 20,
-        accuracy: 65,
-        type: 'PHYSICAL'
-    },
-    secondAttack: {
-        name: "Hit",
-        damage: 10,
-        accuracy: 45,
-        type: 'PHISIC'
-    }
-}
-
-const personaje2 = {
-    name: "Pepe",
-    class: "Clase",
-    maxHealth: 200,
-    currentHealth: 200,
-    speed: 4
-    ,
-    firstAttack: {
-        name: "Kick",
-        damage: 20,
-        accuracy: 65,
-        type: 'PHYSICAL'
-    },
-    secondAttack: {
-        name: "Hit",
-        damage: 10,
-        accuracy: 45,
-        type: 'PHISIC'
-    }
-}
 
 let fallosP1 = 0;
-let fallosP2 = O;
+let fallosP2 = 0;
 
 function anuncioBatalla(personaje1, personaje2) {
     console.log("### INICIO ###");
@@ -91,12 +51,15 @@ function aciertaAtaque(ataque) {
 
 // Ataque del personaje 1
 function ataqueP1(personaje1, personaje2) {
-    if (personaje1.currentHealth && personaje2.currentHealth > 0) {
+    if (personaje1.currentHealth || personaje2.currentHealth > 0) {
         let ataque = escogerAtaque(personaje1);
         let danio = 0;
         if (aciertaAtaque(ataque)) {
             danio = ataque.damage;
             personaje2.currentHealth -= danio;
+            if (personaje2.currentHealth < 0) {
+                personaje2.currentHealth = 0;
+            }
             console.log(`${personaje1.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje2.name} queda en ${personaje2.currentHealth}`)
         } else {
             fallosP1++;
@@ -107,12 +70,15 @@ function ataqueP1(personaje1, personaje2) {
 
 //Ataque del personaje 2
 function ataqueP2(personaje1, personaje2) {
-    if (personaje1.currentHealth && personaje2.currentHealth > 0) {
+    if (personaje1.currentHealth || personaje2.currentHealth > 0) {
         let ataque = escogerAtaque(personaje1);
         let danio = 0;
         if (aciertaAtaque(ataque)) {
             danio = ataque.damage;
             personaje1.currentHealth -= danio
+            if (personaje1.currentHealth < 0) {
+                personaje1.currentHealth = 0;
+            }
             console.log(`${personaje2.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje1.name} queda en ${personaje1.currentHealth}`)
         } else {
             fallosP2++;
@@ -121,16 +87,24 @@ function ataqueP2(personaje1, personaje2) {
     }
 }
 
-function anunciarGanador() {
+function anunciarGanador(personaje1, personaje2) {
     if (personaje1.currentHealth <= 0) {
-        console.log(`${personaje2.nombre} gana la batalla!`)
-    } else if (personaje2.vidaActual <= 0) {
-        console.log(`${personaje1.nombre} gana la batalla!`)
+        console.log(`${personaje2.name} gana la batalla!`)
+    } else if (personaje2.currentHealth <= 0) {
+        console.log(`${personaje1.name} gana la batalla!`)
     }
 }
 
-function mostrarResumen() {
-    anunciarGanador();
+function mostrarResumen(personaje1, personaje2) {
+    anunciarGanador(personaje1, personaje2);
     console.log(`El ${personaje1.name} falló ${fallosP1} veces su ataque.`)
     console.log(`El ${personaje2.name} falló ${fallosP2} veces su ataque.`)
 }
+
+function terminarJuego(personaje1, personaje2) {
+    if (personaje1.currentHealth <= 0 || personaje2.currentHealth <= 0) {
+        return true;
+    }
+}
+
+module.exports = { anuncioBatalla,  determinarTurno, ataqueP1, ataqueP2, mostrarResumen, terminarJuego};

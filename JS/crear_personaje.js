@@ -95,7 +95,7 @@ function crearPesonaje() {
                     class: claseAlAzar,
                     firstAttack: ataquesMagicos(),
                     secondAttack: ataquesMagicos(),
-                    Maxhealth: vida,
+                    maxHealth: vida,
                     currentHealth: vida,
                     speed: velocidad,
                 }
@@ -106,7 +106,7 @@ function crearPesonaje() {
                     class: claseAlAzar,
                     firstAttack: ataquesFisicos(),
                     secondAttack: ataquesFisicos(),
-                    Maxhealth: vida,
+                    maxHealth: vida,
                     currentHealth: vida,
                     speed: velocidad,
                 }
@@ -117,7 +117,7 @@ function crearPesonaje() {
                     class: claseAlAzar,
                     firstAttack: ataquesFisicos(),
                     secondAttack: ataquesFisicos(),
-                    Maxhealth: vida,
+                    maxHealth: vida,
                     currentHealth: vida,
                     speed: velocidad,
                 }
@@ -128,7 +128,7 @@ function crearPesonaje() {
                     class: claseAlAzar,
                     firstAttack: ataquesMagicos(),
                     secondAttack: ataquesMagicos(),
-                    Maxhealth: vida,
+                    maxHealth: vida,
                     currentHealth: vida,
                     speed: velocidad,
                 }
