@@ -1,3 +1,4 @@
+// Lista de ataques obtenidas desde el JSON.
 const ataques = require('../attacks.json')
 
 
@@ -29,9 +30,10 @@ function nombreRandom() {
 }
 
 /**
- * Funcion que escoge un nombre al azar solo si al crear los personajes los nombres se repite
- * Funciona como una segunda 'pool' de nombres en caso de que en la primera se repita los nombres
- * @returns nombre de tipo string para un personaje 
+ * Funcion que escoge un nombre al azar solo si al crear los personajes los nombres se repite.
+ * 
+ * Funciona como una segunda 'pool' de nombres en caso de que en la primera se repita los nombres.
+ * @returns nombre de tipo string para un personaje. 
  */
 function nombreRandom2() {
     const nombres = ['Pedro', 'Davids', 'Cristiano', 'Alexis']
@@ -48,8 +50,8 @@ function claseRandom() {
 }
 
 /**
- * Funcion que escoge un ataque magico y es utilizada en la creacion de los personajes
- * @returns retorna un magico fisico escogido al azar del JSON entregado
+ * Funcion que escoge un ataque magico y es utilizada en la creacion de los personajes.
+ * @returns retorna un magico fisico escogido al azar del JSON entregado.
  */
 function ataquesMagicos() {
     let ataqueMagico = ataques.filter(ataque => ataque.type == 'MAGIC')
@@ -57,8 +59,8 @@ function ataquesMagicos() {
 }
 
 /**
- * Funcion que escoge un ataque fisico y es utilizada en la creacion de los personajes
- * @returns retorna un ataque fisico escogido al azar del JSON entregado
+ * Funcion que escoge un ataque fisico y es utilizada en la creacion de los personajes.
+ * @returns retorna un ataque fisico escogido al azar del JSON entregado.
  */
 function ataquesFisicos() {
     let ataquesFisicos = ataques.filter(ataque => ataque.type == 'PHYSICAL')
@@ -81,7 +83,7 @@ function crearPesonaje() {
         let personaje;
         if (personajes.length > 0) {
             for (let j = 0; j < personajes.length; j++) {
-                if (nombreAlAzar == personajes[j].name) {
+                if (nombreAlAzar === personajes[j].name) {
                     nombreAlAzar = nombreRandom2()
                 }
             }
@@ -135,9 +137,6 @@ function crearPesonaje() {
         personajes.push(personaje)
     }
     console.log(personajes);
-
-    //pelea(jugadores)
-
 }
 
 combate()
