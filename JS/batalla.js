@@ -2,6 +2,7 @@ const crearPesonaje = require('./crear_personaje.js');
 const funcionesBatalla = require('./sistema_batalla.js');
 
 const personajes = crearPesonaje();
+let turno = 0;
 
 funcionesBatalla.anuncioBatalla(personajes[0], personajes[1]);
 while (!funcionesBatalla.terminarJuego(personajes[0], personajes[1])) {

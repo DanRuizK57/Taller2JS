@@ -1,6 +1,7 @@
 
 let fallosP1 = 0;
 let fallosP2 = 0;
+let turno = 1;
 
 function anuncioBatalla(personaje1, personaje2) {
     console.log("### INICIO ###");
@@ -60,10 +61,14 @@ function ataqueP1(personaje1, personaje2) {
             if (personaje2.currentHealth < 0) {
                 personaje2.currentHealth = 0;
             }
-            console.log(`${personaje1.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje2.name} queda en ${personaje2.currentHealth}`)
+            console.log(`Turno ${turno}`);
+            console.log(`${personaje1.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje2.name} queda en ${personaje2.currentHealth}`);
+            turno++;
         } else {
             fallosP1++;
-            console.log(`${personaje1.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje2.name} se mantiene en ${personaje2.currentHealth}`)
+            console.log(`Turno ${turno}`);
+            console.log(`${personaje1.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje2.name} se mantiene en ${personaje2.currentHealth}`);
+            turno++;
         }
     }
 }
@@ -79,10 +84,14 @@ function ataqueP2(personaje1, personaje2) {
             if (personaje1.currentHealth < 0) {
                 personaje1.currentHealth = 0;
             }
-            console.log(`${personaje2.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje1.name} queda en ${personaje1.currentHealth}`)
+            console.log(`Turno ${turno}`);
+            console.log(`${personaje2.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje1.name} queda en ${personaje1.currentHealth}`);
+            turno++;
         } else {
             fallosP2++;
-            console.log(`${personaje2.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje1.name} se mantiene en ${personaje1.currentHealth}`)
+            console.log(`Turno ${turno}`);
+            console.log(`${personaje2.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje1.name} se mantiene en ${personaje1.currentHealth}`);
+            turno++;
         }
     }
 }
