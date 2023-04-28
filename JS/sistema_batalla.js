@@ -3,7 +3,19 @@ const personaje1 = {
     class: "Clase",
     maxHealth: 100,
     currentHealth: 100,
-    speed: 8
+    speed: 8,
+    firstAttack: {
+        name: "Kick",
+        damage: 20,
+        accuracy: 65,
+        type: 'PHYSICAL'
+    },
+    secondAttack: {
+        name: "Hit",
+        damage: 10,
+        accuracy: 45,
+        type: 'PHISIC'
+    }
 }
 
 const personaje2 = {
@@ -12,6 +24,19 @@ const personaje2 = {
     maxHealth: 200,
     currentHealth: 200,
     speed: 4
+    ,
+    firstAttack: {
+        name: "Kick",
+        damage: 20,
+        accuracy: 65,
+        type: 'PHYSICAL'
+    },
+    secondAttack: {
+        name: "Hit",
+        damage: 10,
+        accuracy: 45,
+        type: 'PHISIC'
+    }
 }
 
 function anuncioBatalla(personaje1, personaje2) {
@@ -53,9 +78,14 @@ function aciertaAtaque(ataque) {
 function ataqueP1(personaje1, personaje2) {
     if (personaje1.currentHealth && personaje2.currentHealth > 0) {
         let ataque = escogerAtaque(personaje1);
-        let danio = ataque.damage;
-        personaje2.currentHealth -= danio;
-        console.log(`${personaje1.name} atacó y le hizo ${danio} de daño a ${personaje2.name}`)
+        let danio = 0;
+        if (aciertaAtaque(ataque)) {
+            danio = ataque.damage;
+            personaje2.currentHealth -= danio;
+            console.log(`${personaje1.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje2.name} queda en ${personaje2.currentHealth}`)
+        } else {
+            console.log(`${personaje1.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje2.name} se mantiene en ${personaje2.currentHealth}`)
+        }
     }
 }
 
@@ -63,10 +93,22 @@ function ataqueP1(personaje1, personaje2) {
 function ataqueP2(personaje1, personaje2) {
     if (personaje1.currentHealth && personaje2.currentHealth > 0) {
         let ataque = escogerAtaque(personaje1);
-        let danio = ataque.damage;
-        personaje1.currentHealth -= danio
-        console.log(`${personaje2.name} atacó y le hizo ${danio} de daño a ${personaje1.name}`)
+        let danio = 0;
+        if (aciertaAtaque(ataque)) {
+            danio = ataque.damage;
+            personaje1.currentHealth -= danio
+            console.log(`${personaje2.name} ataca con ${ataque.name}... Da en el blanco!. La vida del ${personaje1.name} queda en ${personaje1.currentHealth}`)
+        } else {
+            console.log(`${personaje2.name} ataca con ${ataque.name}... Falla!. La vida del ${personaje1.name} se mantiene en ${personaje1.currentHealth}`)
+        }
     }
 }
 
 anuncioBatalla(personaje1, personaje2);
+console.log(determinarTurno(personaje1, personaje2));
+console.log(escogerAtaque(personaje1));
+console.log(aciertaAtaque(personaje1.firstAttack));
+ataqueP1(personaje1, personaje2);
+console.log(personaje2);
+ataqueP2(personaje1, personaje2);
+console.log(personaje1);
