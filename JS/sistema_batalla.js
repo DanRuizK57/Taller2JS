@@ -3,8 +3,9 @@ let fallosP1 = 0;
 let fallosP2 = 0;
 let turno = 0;
 
+// Anuncia a los luchadores con su respectiva información importante
 function anuncioBatalla(personaje1, personaje2) {
-  return `\n${personaje1.name} | ${personaje1.class} | ${personaje1.maxHealth} de vida VS ${personaje2.name} | ${personaje2.class} | ${personaje2.maxHealth} de vida `
+    return `\n${personaje1.name} | ${personaje1.class} | ${personaje1.maxHealth} de vida VS ${personaje2.name} | ${personaje2.class} | ${personaje2.maxHealth} de vida `;
 }
 
 // Quien tenga la mayor velocidad empieza atacando
@@ -91,6 +92,7 @@ function ataqueP2(personaje1, personaje2) {
     }
 }
 
+// Anuncia el ganador de la batalla
 function anunciarGanador(personaje1, personaje2) {
     if (personaje1.currentHealth <= 0) {
         return `\n${personaje2.name} gana la batalla! `
@@ -99,14 +101,16 @@ function anunciarGanador(personaje1, personaje2) {
     }
 }
 
+// Muestra el resumen de la batalla
 function mostrarResumen(personaje1, personaje2) {
     return '\n'+anunciarGanador(personaje1, personaje2) +  `\nEl ${personaje1.name} falló ${fallosP1} veces su ataque. \nEl ${personaje2.name} falló ${fallosP2} veces su ataque.` 
 }
 
+// Determina si el juego continúa o para
 function terminarJuego(personaje1, personaje2) {
     if (personaje1.currentHealth <= 0 || personaje2.currentHealth <= 0) {
         return true;
     }
 }
 
-module.exports = { anuncioBatalla,  determinarTurno, ataqueP1, ataqueP2, mostrarResumen, terminarJuego , };
+module.exports = { anuncioBatalla,  determinarTurno, ataqueP1, ataqueP2, mostrarResumen, terminarJuego};

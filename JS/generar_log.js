@@ -1,3 +1,4 @@
+// Genera un archivo
 function generarArchivoLog(logs, nombreArchivo) {
 
     const fs = require("fs");

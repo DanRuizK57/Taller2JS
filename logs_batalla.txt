@@ -1,31 +1,85 @@
 ### INICIO BATALLA ###
-Diego | KNIGHT | 182 de vida VS Pepe | FAIRY | 101 de vida 
+Pepe | MAGICIAN | 137 de vida VS Haaland | KNIGHT | 154 de vida 
 ### BATALLA ###
 Turno 1 
-Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 164
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 146
 Turno 2 
-Diego ataca con Kick Strike... Da en el blanco!. La vida del Pepe queda en 79
-Turno 3
-Pepe ataca con Kick Strike... Falla!. La vida del Diego se mantiene en 164
-Turno 4 
-Diego ataca con Fist Punch... Da en el blanco!. La vida del Pepe queda en 61
+Haaland ataca con Earthquake... Da en el blanco!. La vida del Pepe queda en 125
+Turno 3 
+Pepe ataca con Earthquake... Da en el blanco!. La vida del Haaland queda en 134
+Turno 4
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 125
 Turno 5 
-Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 146
-Turno 6 
-Diego ataca con Kick Strike.... Falla!. La vida del Pepe se mantiene en 61
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 126
+Turno 6
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 125
 Turno 7 
-Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 128
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 118
 Turno 8 
-Diego ataca con Kick Strike... Da en el blanco!. La vida del Pepe queda en 39
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 117
 Turno 9 
-Pepe ataca con Kick Strike... Da en el blanco!. La vida del Diego queda en 106
-Turno 10 
-Diego ataca con Fist Punch... Da en el blanco!. La vida del Pepe queda en 21
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 110
+Turno 10
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 117
 Turno 11 
-Pepe ataca con Fist Punch... Da en el blanco!. La vida del Diego queda en 88
-Turno 12 
-Diego ataca con Kick Strike... Da en el blanco!. La vida del Pepe queda en 0
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 102
+Turno 12
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 117
+Turno 13 
+Pepe ataca con Earthquake... Da en el blanco!. La vida del Haaland queda en 90
+Turno 14 
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 109
+Turno 15 
+Pepe ataca con Earthquake... Da en el blanco!. La vida del Haaland queda en 78
+Turno 16 
+Haaland ataca con Earthquake... Da en el blanco!. La vida del Pepe queda en 97
+Turno 17 
+Pepe ataca con Earthquake... Da en el blanco!. La vida del Haaland queda en 66
+Turno 18 
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 89
+Turno 19 
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 58
+Turno 20 
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 81
+Turno 21 
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 50
+Turno 22 
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 73
+Turno 23 
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 42
+Turno 24 
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 65
+Turno 25 
+Pepe ataca con Earthquake.... Falla!. La vida del Haaland se mantiene en 42
+Turno 26 
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 57
+Turno 27 
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 34
+Turno 28
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 57
+Turno 29 
+Pepe ataca con Earthquake.... Falla!. La vida del Haaland se mantiene en 34
+Turno 30
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 57
+Turno 31 
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 26
+Turno 32 
+Haaland ataca con Earthquake... Da en el blanco!. La vida del Pepe queda en 45
+Turno 33 
+Pepe ataca con Earthquake... Da en el blanco!. La vida del Haaland queda en 14
+Turno 34 
+Haaland ataca con Mind Blast... Da en el blanco!. La vida del Pepe queda en 37
+Turno 35 
+Pepe ataca con Earthquake.... Falla!. La vida del Haaland se mantiene en 14
+Turno 36
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 37
+Turno 37 
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 6
+Turno 38
+Haaland ataca con Earthquake... Falla!. La vida del Pepe se mantiene en 37
+Turno 39 
+Pepe ataca con Mind Blast... Da en el blanco!. La vida del Haaland queda en 0
 
-Diego gana la batalla! 
-El Diego falló 1 veces su ataque. 
-El Pepe falló 1 veces su ataque.
+Pepe gana la batalla! 
+El Pepe falló 3 veces su ataque. 
+El Haaland falló 8 veces su ataque.
